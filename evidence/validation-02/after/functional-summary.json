@@ -1,0 +1,19 @@
+{
+  "name": "drivers.disk.virtio_blk",
+  "status": "passed",
+  "platform": "qemu_x86_64/atom",
+  "testcases": [
+    {
+      "identifier": "drivers.disk.virtio_blk.disk_driver.erase",
+      "status": "skipped"
+    },
+    {
+      "identifier": "drivers.disk.virtio_blk.disk_driver.write",
+      "status": "passed"
+    },
+    {
+      "identifier": "drivers.disk.virtio_blk.disk_driver.read",
+      "status": "passed"
+    }
+  ]
+}

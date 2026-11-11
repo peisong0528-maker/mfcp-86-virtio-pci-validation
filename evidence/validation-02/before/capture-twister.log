@@ -1,0 +1,217 @@
+2026-11-11 15:38:00,843 - twister - INFO - Using Ninja..
+2026-11-11 15:38:00,845 - twister - INFO - Zephyr version: b7a1d910fcb8
+2026-11-11 15:38:00,910 - twister - DEBUG - Running cmake script /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:38:00,910 - twister - DEBUG - Calling cmake: /workspace/mfcp86/.venv/bin/cmake -DFORMAT=json -P /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:38:01,231 - twister - DEBUG - Finished running /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:38:01,232 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-11-11 15:38:02,321 - twister - DEBUG - Reading testsuite configuration files under /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access...
+2026-11-11 15:38:02,321 - twister - DEBUG - Found possible testsuite in /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access
+2026-11-11 15:38:02,326 - twister - DEBUG - No duplicates found.
+2026-11-11 15:38:02,326 - twister - DEBUG -  platform filter: ['qemu_x86_64']
+2026-11-11 15:38:02,326 - twister - DEBUG - platform_pattern: []
+2026-11-11 15:38:02,326 - twister - DEBUG -    vendor filter: []
+2026-11-11 15:38:02,326 - twister - DEBUG -      arch_filter: None
+2026-11-11 15:38:02,327 - twister - DEBUG -       tag_filter: None
+2026-11-11 15:38:02,327 - twister - DEBUG -      exclude_tag: None
+2026-11-11 15:38:02,327 - twister - DEBUG - Checking platform filter: ['qemu_x86_64']
+2026-11-11 15:38:02,327 - twister - INFO - Building initial testsuite list...
+2026-11-11 15:38:02,328 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-11-11 15:38:02,328 - twister - INFO - Writing JSON report /workspace/mfcp86/logs/validation-02/before/capture/testplan.json
+2026-11-11 15:38:02,348 - twister - INFO - JOBS: 4
+2026-11-11 15:38:02,348 - twister - INFO - Adding tasks to the queue...
+2026-11-11 15:38:02,348 - twister - DEBUG - adding qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:02,350 - twister - INFO - Added initial list of jobs to queue
+2026-11-11 15:38:02,356 - twister - DEBUG - Launched 4 jobs
+2026-11-11 15:38:02,358 - twister - DEBUG - Running cmake on /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom
+2026-11-11 15:38:02,359 - twister - DEBUG - Calling cmake: /workspace/mfcp86/.venv/bin/cmake -B/workspace/mfcp86/logs/validation-02/before/capture/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk -DTC_RUNID=0fc3d1654e6dcf40273f6ee93a0bed4d -DTC_NAME=drivers.disk.virtio_blk -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DCONFIG_DEPRECATED_KCONFIGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/mfcp86/.venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access -DFILE_SUFFIX=virtio_blk -DQEMU_PIPE=/workspace/mfcp86/logs/validation-02/before/capture/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/qemu-fifo -DOVERLAY_CONFIG=/workspace/mfcp86/logs/validation-02/before/capture/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/twister/testsuite_extra.conf -DBOARD=qemu_x86_64/atom
+2026-11-11 15:38:08,023 - twister - DEBUG - Finished running cmake /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom in 5.66 seconds
+2026-11-11 15:38:08,025 - twister - DEBUG - build test: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:08,025 - twister - DEBUG - Building /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom
+2026-11-11 15:38:08,026 - twister - DEBUG - Running /workspace/mfcp86/.venv/bin/cmake --build /workspace/mfcp86/logs/validation-02/before/capture/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk
+2026-11-11 15:38:18,323 - twister - DEBUG - Finished building /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom in 10.30 seconds
+2026-11-11 15:38:18,323 - twister - DEBUG - Determine test cases for test instance: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:18,323 - twister - DEBUG - Determine test cases for test suite: drivers.disk.virtio_blk
+2026-11-11 15:38:18,383 - twister - DEBUG - Test instance qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk already has 3 testcase(s) known: [<TestCase drivers.disk.virtio_blk.disk_driver.read with None>, <TestCase drivers.disk.virtio_blk.disk_driver.write with None>, <TestCase drivers.disk.virtio_blk.disk_driver.erase with None>]
+2026-11-11 15:38:18,383 - twister - DEBUG - Detected 3 Ztest case(s): [drivers.disk.virtio_blk.disk_driver.erase, drivers.disk.virtio_blk.disk_driver.write, drivers.disk.virtio_blk.disk_driver.read] in /workspace/mfcp86/logs/validation-02/before/capture/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/zephyr/zephyr.elf
+2026-11-11 15:38:18,389 - twister - DEBUG - run test: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:18,389 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-11-11 15:38:18,389 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:18,390 - twister - DEBUG - Running qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk (qemu)
+2026-11-11 15:38:18,390 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:38:18,539 - twister - DEBUG - QEMU (9255): [0mSeaBIOS (version zephyr-v1.16.3-2-0-gf8da0cc-zephyr)
+2026-11-11 15:38:18,544 - twister - DEBUG - QEMU (9255): Booting from ROM..
+2026-11-11 15:38:18,597 - twister - DEBUG - QEMU (9255): I: found virtio pci device with id 0x10011af4 and bdf 0x1000
+2026-11-11 15:38:18,599 - twister - DEBUG - QEMU (9255): MFCP86 MAP bdf=0x1000 cap=1 phys=0xfe000000 len=4096 flags=0x8 p=1 rw=1 pcd=0 pwt=0
+2026-11-11 15:38:18,600 - twister - DEBUG - QEMU (9255): MFCP86 MAP bdf=0x1000 cap=3 phys=0xfe001000 len=4096 flags=0x8 p=1 rw=1 pcd=0 pwt=0
+2026-11-11 15:38:18,602 - twister - DEBUG - QEMU (9255): MFCP86 MAP bdf=0x1000 cap=2 phys=0xfe003000 len=4096 flags=0x8 p=1 rw=1 pcd=0 pwt=0
+2026-11-11 15:38:18,602 - twister - DEBUG - QEMU (9255): MFCP86 MAP bdf=0x1000 cap=4 phys=0xfe002000 len=4096 flags=0x8 p=1 rw=1 pcd=0 pwt=0
+2026-11-11 15:38:18,603 - twister - DEBUG - QEMU (9255): I: virtio pci device with id 0x10011af4 and bdf 0x1000 advertised feature bits: 0x00000000000000000000010130007e54
+2026-11-11 15:38:18,605 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=init
+2026-11-11 15:38:18,605 - twister - DEBUG - QEMU (9255): I: capacity 1048576 bytes, block size 512 bytes
+2026-11-11 15:38:18,605 - twister - DEBUG - QEMU (9255): *** Booting Zephyr OS build b7a1d910fcb8 ***
+2026-11-11 15:38:18,618 - twister - DEBUG - QEMU (9255): RunID started: 0fc3d1654e6dcf40273f6ee93a0bed4d
+2026-11-11 15:38:18,620 - twister - DEBUG - QEMU (9255): Running TESTSUITE disk_driver
+2026-11-11 15:38:18,621 - twister - DEBUG - QEMU (9255): ===================================================================
+2026-11-11 15:38:18,622 - twister - DEBUG - QEMU (9255): Disk reports 2048 sectors
+2026-11-11 15:38:18,622 - twister - DEBUG - QEMU (9255): Disk reports sector size 512
+2026-11-11 15:38:18,623 - twister - DEBUG - QEMU (9255): START - test_erase
+2026-11-11 15:38:18,626 - twister - DEBUG - QEMU (9255):  SKIP - test_erase in 0.002 seconds
+2026-11-11 15:38:18,626 - twister - DEBUG - QEMU (9255): ===================================================================
+2026-11-11 15:38:18,626 - twister - DEBUG - QEMU (9255): START - test_read
+2026-11-11 15:38:18,626 - twister - DEBUG - QEMU (9255): Testing reads of 8 sectors
+2026-11-11 15:38:18,628 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,629 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,629 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,630 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,630 - twister - DEBUG - QEMU (9255): Testing reads of 1 sectors
+2026-11-11 15:38:18,630 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,630 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,631 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,631 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,631 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,632 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,632 - twister - DEBUG - QEMU (9255): Testing reads of 29 sectors
+2026-11-11 15:38:18,632 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,632 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,632 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,633 - twister - DEBUG - QEMU (9255): Testing reads of 31 sectors
+2026-11-11 15:38:18,633 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,633 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,633 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,633 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,634 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,634 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,634 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,634 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,635 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,635 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,635 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,636 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,636 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,637 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,638 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,639 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,639 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,640 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,641 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,642 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,643 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,644 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,644 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,645 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,645 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,645 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,646 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,646 - twister - DEBUG - QEMU (9255):  PASS - test_read in 0.020 seconds
+2026-11-11 15:38:18,647 - twister - DEBUG - QEMU (9255): ===================================================================
+2026-11-11 15:38:18,648 - twister - DEBUG - QEMU (9255): START - test_write
+2026-11-11 15:38:18,648 - twister - DEBUG - QEMU (9255): Testing writes of 8 sectors
+2026-11-11 15:38:18,649 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,650 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,651 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,651 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,652 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,652 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,653 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,654 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,655 - twister - DEBUG - QEMU (9255): Testing writes of 1 sectors
+2026-11-11 15:38:18,656 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,656 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,658 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,658 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,659 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,660 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,660 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,661 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,662 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,663 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,664 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,665 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,665 - twister - DEBUG - QEMU (9255): Testing writes of 29 sectors
+2026-11-11 15:38:18,666 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,667 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,668 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,669 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,670 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,671 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,672 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,672 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,673 - twister - DEBUG - QEMU (9255): Testing writes of 31 sectors
+2026-11-11 15:38:18,674 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,674 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,675 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,676 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,677 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,678 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,679 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,680 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,682 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,682 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,683 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,684 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,685 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,685 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,687 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,688 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,688 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,689 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,690 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,690 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,691 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,691 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,692 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,692 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,693 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,693 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,694 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,695 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,695 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,696 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,696 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,697 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,698 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,699 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,700 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,700 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,701 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,702 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,703 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,703 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,704 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,705 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,706 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,707 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,708 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,708 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,709 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=notify
+2026-11-11 15:38:18,710 - twister - DEBUG - QEMU (9255): MFCP86 EVENT bdf=0x1000 kind=irq
+2026-11-11 15:38:18,711 - twister - DEBUG - QEMU (9255):  PASS - test_write in 0.063 seconds
+2026-11-11 15:38:18,712 - twister - DEBUG - QEMU (9255): ===================================================================
+2026-11-11 15:38:18,713 - twister - DEBUG - QEMU (9255): TESTSUITE disk_driver succeeded
+2026-11-11 15:38:18,713 - twister - DEBUG - QEMU (9255): 
+2026-11-11 15:38:18,714 - twister - DEBUG - QEMU (9255): ------ TESTSUITE SUMMARY START ------
+2026-11-11 15:38:18,714 - twister - DEBUG - QEMU (9255): 
+2026-11-11 15:38:18,717 - twister - DEBUG - QEMU (9255): SUITE PASS - 100.00% [disk_driver]: pass = 2, fail = 0, skip = 1, total = 3 duration = 0.085 seconds
+2026-11-11 15:38:18,718 - twister - DEBUG - QEMU (9255):  - SKIP - [disk_driver.test_erase] duration = 0.002 seconds
+2026-11-11 15:38:18,719 - twister - DEBUG - QEMU (9255):  - PASS - [disk_driver.test_read] duration = 0.020 seconds
+2026-11-11 15:38:18,721 - twister - DEBUG - QEMU (9255):  - PASS - [disk_driver.test_write] duration = 0.063 seconds
+2026-11-11 15:38:18,721 - twister - DEBUG - QEMU (9255): 
+2026-11-11 15:38:18,721 - twister - DEBUG - QEMU (9255): ------ TESTSUITE SUMMARY END ------
+2026-11-11 15:38:18,721 - twister - DEBUG - QEMU (9255): 
+2026-11-11 15:38:18,723 - twister - DEBUG - QEMU (9255): ===================================================================
+2026-11-11 15:38:18,724 - twister - DEBUG - QEMU (9255): RunID: 0fc3d1654e6dcf40273f6ee93a0bed4d
+2026-11-11 15:38:18,724 - twister - DEBUG - QEMU (9255): PROJECT EXECUTION SUCCESSFUL
+2026-11-11 15:38:19,726 - twister - DEBUG - QEMU (9255) complete with passed (None) after 1.2783398628234863 seconds
+2026-11-11 15:38:19,758 - twister - DEBUG - No timeout, return code from QEMU (None): 0
+2026-11-11 15:38:19,758 - twister - DEBUG - return code from QEMU (None): 0
+2026-11-11 15:38:19,758 - twister - DEBUG - run status: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk passed
+2026-11-11 15:38:19,766 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-11-11 15:38:19,772 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 18.93 seconds.
+2026-11-11 15:38:19,772 - twister - INFO - 2 of 2 executed test cases passed (100.00%) on 1 out of total 1823 platforms (0.05%).
+2026-11-11 15:38:19,772 - twister - INFO - 1 selected test cases not executed: 1 skipped.
+2026-11-11 15:38:19,772 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-11-11 15:38:19,772 - twister - INFO - Saving reports...
+2026-11-11 15:38:19,772 - twister - INFO - Writing JSON report /workspace/mfcp86/logs/validation-02/before/capture/twister.json
+2026-11-11 15:38:19,772 - twister - INFO - Writing xunit report /workspace/mfcp86/logs/validation-02/before/capture/twister.xml...
+2026-11-11 15:38:19,773 - twister - INFO - Writing xunit report /workspace/mfcp86/logs/validation-02/before/capture/twister_report.xml...
+2026-11-11 15:38:19,774 - twister - INFO - Run completed

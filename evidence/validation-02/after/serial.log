@@ -1,0 +1,163 @@
+SeaBIOS (version zephyr-v1.16.3-2-0-gf8da0cc-zephyr)
+Booting from ROM..
+I: found virtio pci device with id 0x10011af4 and bdf 0x1000
+MFCP86 MAP bdf=0x1000 cap=1 phys=0xfe000000 len=4096 flags=0xa p=1 rw=1 pcd=1 pwt=0
+MFCP86 MAP bdf=0x1000 cap=3 phys=0xfe001000 len=4096 flags=0xa p=1 rw=1 pcd=1 pwt=0
+MFCP86 MAP bdf=0x1000 cap=2 phys=0xfe003000 len=4096 flags=0xa p=1 rw=1 pcd=1 pwt=0
+MFCP86 MAP bdf=0x1000 cap=4 phys=0xfe002000 len=4096 flags=0xa p=1 rw=1 pcd=1 pwt=0
+I: virtio pci device with id 0x10011af4 and bdf 0x1000 advertised feature bits: 0x00000000000000000000010130007e54
+MFCP86 EVENT bdf=0x1000 kind=init
+I: capacity 1048576 bytes, block size 512 bytes
+*** Booting Zephyr OS build b7a1d910fcb8 ***
+RunID started: 33ae14b4f81314069a72e4966c814ad2
+Running TESTSUITE disk_driver
+===================================================================
+Disk reports 2048 sectors
+Disk reports sector size 512
+START - test_erase
+ SKIP - test_erase in 0.002 seconds
+===================================================================
+START - test_read
+Testing reads of 8 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing reads of 1 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing reads of 29 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing reads of 31 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+ PASS - test_read in 0.034 seconds
+===================================================================
+START - test_write
+Testing writes of 8 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing writes of 1 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing writes of 29 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+Testing writes of 31 sectors
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+MFCP86 EVENT bdf=0x1000 kind=notify
+MFCP86 EVENT bdf=0x1000 kind=irq
+ PASS - test_write in 0.058 seconds
+===================================================================
+TESTSUITE disk_driver succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [disk_driver]: pass = 2, fail = 0, skip = 1, total = 3 duration = 0.094 seconds
+ - SKIP - [disk_driver.test_erase] duration = 0.002 seconds
+ - PASS - [disk_driver.test_read] duration = 0.034 seconds
+ - PASS - [disk_driver.test_write] duration = 0.058 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+RunID: 33ae14b4f81314069a72e4966c814ad2
+PROJECT EXECUTION SUCCESSFUL

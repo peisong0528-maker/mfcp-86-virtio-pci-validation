@@ -1,0 +1,8 @@
+{
+  "zephyr_base": "b7a1d910fcb876500e584761ed8bb1c25c8cd5e7",
+  "acpica": "8d24867bc9c9d81c81eeac59391cda59333affd4",
+  "sdk": "1.0.1",
+  "result": "passed",
+  "execution_architecture": "x86_64",
+  "arm_analysis": "source inspection"
+}

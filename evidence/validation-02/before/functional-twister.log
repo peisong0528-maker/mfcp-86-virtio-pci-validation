@@ -1,0 +1,96 @@
+2026-11-11 15:37:41,303 - twister - INFO - Using Ninja..
+2026-11-11 15:37:41,305 - twister - INFO - Zephyr version: b7a1d910fcb8
+2026-11-11 15:37:41,369 - twister - DEBUG - Running cmake script /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:37:41,369 - twister - DEBUG - Calling cmake: /workspace/mfcp86/.venv/bin/cmake -DFORMAT=json -P /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:37:41,685 - twister - DEBUG - Finished running /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/cmake/verify-toolchain.cmake
+2026-11-11 15:37:41,686 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-11-11 15:37:42,755 - twister - DEBUG - Reading testsuite configuration files under /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access...
+2026-11-11 15:37:42,755 - twister - DEBUG - Found possible testsuite in /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access
+2026-11-11 15:37:42,759 - twister - DEBUG - No duplicates found.
+2026-11-11 15:37:42,760 - twister - DEBUG -  platform filter: ['qemu_x86_64']
+2026-11-11 15:37:42,760 - twister - DEBUG - platform_pattern: []
+2026-11-11 15:37:42,760 - twister - DEBUG -    vendor filter: []
+2026-11-11 15:37:42,760 - twister - DEBUG -      arch_filter: None
+2026-11-11 15:37:42,760 - twister - DEBUG -       tag_filter: None
+2026-11-11 15:37:42,760 - twister - DEBUG -      exclude_tag: None
+2026-11-11 15:37:42,760 - twister - DEBUG - Checking platform filter: ['qemu_x86_64']
+2026-11-11 15:37:42,760 - twister - INFO - Building initial testsuite list...
+2026-11-11 15:37:42,761 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-11-11 15:37:42,761 - twister - INFO - Writing JSON report /workspace/mfcp86/logs/validation-02/before/functional/testplan.json
+2026-11-11 15:37:42,780 - twister - INFO - JOBS: 4
+2026-11-11 15:37:42,780 - twister - INFO - Adding tasks to the queue...
+2026-11-11 15:37:42,781 - twister - DEBUG - adding qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:42,782 - twister - INFO - Added initial list of jobs to queue
+2026-11-11 15:37:42,789 - twister - DEBUG - Launched 4 jobs
+2026-11-11 15:37:42,789 - twister - DEBUG - Running cmake on /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom
+2026-11-11 15:37:42,790 - twister - DEBUG - Calling cmake: /workspace/mfcp86/.venv/bin/cmake -B/workspace/mfcp86/logs/validation-02/before/functional/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk -DTC_RUNID=216d923bf9cb5ab30a4f57faa3e095f6 -DTC_NAME=drivers.disk.virtio_blk -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DCONFIG_DEPRECATED_KCONFIGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/workspace/mfcp86/.venv/bin/python -DZEPHYR_TOOLCHAIN_VARIANT=zephyr/gnu -S/workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access -DFILE_SUFFIX=virtio_blk -DQEMU_PIPE=/workspace/mfcp86/logs/validation-02/before/functional/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/qemu-fifo -DOVERLAY_CONFIG=/workspace/mfcp86/logs/validation-02/before/functional/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/twister/testsuite_extra.conf -DBOARD=qemu_x86_64/atom
+2026-11-11 15:37:48,449 - twister - DEBUG - Finished running cmake /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom in 5.66 seconds
+2026-11-11 15:37:48,452 - twister - DEBUG - build test: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:48,452 - twister - DEBUG - Building /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom
+2026-11-11 15:37:48,453 - twister - DEBUG - Running /workspace/mfcp86/.venv/bin/cmake --build /workspace/mfcp86/logs/validation-02/before/functional/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk
+2026-11-11 15:37:58,726 - twister - DEBUG - Finished building /workspace/mfcp86/workspace/.mfcp86-worktrees.3SLsX8/before/tests/drivers/disk/disk_access for qemu_x86_64/atom in 10.27 seconds
+2026-11-11 15:37:58,726 - twister - DEBUG - Determine test cases for test instance: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:58,726 - twister - DEBUG - Determine test cases for test suite: drivers.disk.virtio_blk
+2026-11-11 15:37:58,788 - twister - DEBUG - Test instance qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk already has 3 testcase(s) known: [<TestCase drivers.disk.virtio_blk.disk_driver.erase with None>, <TestCase drivers.disk.virtio_blk.disk_driver.read with None>, <TestCase drivers.disk.virtio_blk.disk_driver.write with None>]
+2026-11-11 15:37:58,788 - twister - DEBUG - Detected 3 Ztest case(s): [drivers.disk.virtio_blk.disk_driver.erase, drivers.disk.virtio_blk.disk_driver.write, drivers.disk.virtio_blk.disk_driver.read] in /workspace/mfcp86/logs/validation-02/before/functional/qemu_x86_64_atom/zephyr_gnu/tests/drivers/disk/disk_access/drivers.disk.virtio_blk/zephyr/zephyr.elf
+2026-11-11 15:37:58,793 - twister - DEBUG - run test: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:58,793 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-11-11 15:37:58,793 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:58,794 - twister - DEBUG - Running qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk (qemu)
+2026-11-11 15:37:58,794 - twister - DEBUG - Spawning QEMUHandler Thread for qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk
+2026-11-11 15:37:58,941 - twister - DEBUG - QEMU (7903): [0mSeaBIOS (version zephyr-v1.16.3-2-0-gf8da0cc-zephyr)
+2026-11-11 15:37:58,946 - twister - DEBUG - QEMU (7903): Booting from ROM..
+2026-11-11 15:37:59,001 - twister - DEBUG - QEMU (7903): I: found virtio pci device with id 0x10011af4 and bdf 0x1000
+2026-11-11 15:37:59,006 - twister - DEBUG - QEMU (7903): I: virtio pci device with id 0x10011af4 and bdf 0x1000 advertised feature bits: 0x00000000000000000000010130007e54
+2026-11-11 15:37:59,008 - twister - DEBUG - QEMU (7903): I: capacity 1048576 bytes, block size 512 bytes
+2026-11-11 15:37:59,009 - twister - DEBUG - QEMU (7903): *** Booting Zephyr OS build b7a1d910fcb8 ***
+2026-11-11 15:37:59,022 - twister - DEBUG - QEMU (7903): RunID started: 216d923bf9cb5ab30a4f57faa3e095f6
+2026-11-11 15:37:59,023 - twister - DEBUG - QEMU (7903): Running TESTSUITE disk_driver
+2026-11-11 15:37:59,025 - twister - DEBUG - QEMU (7903): ===================================================================
+2026-11-11 15:37:59,025 - twister - DEBUG - QEMU (7903): Disk reports 2048 sectors
+2026-11-11 15:37:59,026 - twister - DEBUG - QEMU (7903): Disk reports sector size 512
+2026-11-11 15:37:59,027 - twister - DEBUG - QEMU (7903): START - test_erase
+2026-11-11 15:37:59,031 - twister - DEBUG - QEMU (7903):  SKIP - test_erase in 0.004 seconds
+2026-11-11 15:37:59,031 - twister - DEBUG - QEMU (7903): ===================================================================
+2026-11-11 15:37:59,031 - twister - DEBUG - QEMU (7903): START - test_read
+2026-11-11 15:37:59,032 - twister - DEBUG - QEMU (7903): Testing reads of 8 sectors
+2026-11-11 15:37:59,035 - twister - DEBUG - QEMU (7903): Testing reads of 1 sectors
+2026-11-11 15:37:59,036 - twister - DEBUG - QEMU (7903): Testing reads of 29 sectors
+2026-11-11 15:37:59,037 - twister - DEBUG - QEMU (7903): Testing reads of 31 sectors
+2026-11-11 15:37:59,041 - twister - DEBUG - QEMU (7903):  PASS - test_read in 0.010 seconds
+2026-11-11 15:37:59,043 - twister - DEBUG - QEMU (7903): ===================================================================
+2026-11-11 15:37:59,043 - twister - DEBUG - QEMU (7903): START - test_write
+2026-11-11 15:37:59,044 - twister - DEBUG - QEMU (7903): Testing writes of 8 sectors
+2026-11-11 15:37:59,046 - twister - DEBUG - QEMU (7903): Testing writes of 1 sectors
+2026-11-11 15:37:59,047 - twister - DEBUG - QEMU (7903): Testing writes of 29 sectors
+2026-11-11 15:37:59,049 - twister - DEBUG - QEMU (7903): Testing writes of 31 sectors
+2026-11-11 15:37:59,054 - twister - DEBUG - QEMU (7903):  PASS - test_write in 0.011 seconds
+2026-11-11 15:37:59,055 - twister - DEBUG - QEMU (7903): ===================================================================
+2026-11-11 15:37:59,056 - twister - DEBUG - QEMU (7903): TESTSUITE disk_driver succeeded
+2026-11-11 15:37:59,056 - twister - DEBUG - QEMU (7903): 
+2026-11-11 15:37:59,057 - twister - DEBUG - QEMU (7903): ------ TESTSUITE SUMMARY START ------
+2026-11-11 15:37:59,057 - twister - DEBUG - QEMU (7903): 
+2026-11-11 15:37:59,060 - twister - DEBUG - QEMU (7903): SUITE PASS - 100.00% [disk_driver]: pass = 2, fail = 0, skip = 1, total = 3 duration = 0.025 seconds
+2026-11-11 15:37:59,060 - twister - DEBUG - QEMU (7903):  - SKIP - [disk_driver.test_erase] duration = 0.004 seconds
+2026-11-11 15:37:59,061 - twister - DEBUG - QEMU (7903):  - PASS - [disk_driver.test_read] duration = 0.010 seconds
+2026-11-11 15:37:59,061 - twister - DEBUG - QEMU (7903):  - PASS - [disk_driver.test_write] duration = 0.011 seconds
+2026-11-11 15:37:59,062 - twister - DEBUG - QEMU (7903): 
+2026-11-11 15:37:59,062 - twister - DEBUG - QEMU (7903): ------ TESTSUITE SUMMARY END ------
+2026-11-11 15:37:59,062 - twister - DEBUG - QEMU (7903): 
+2026-11-11 15:37:59,063 - twister - DEBUG - QEMU (7903): ===================================================================
+2026-11-11 15:37:59,064 - twister - DEBUG - QEMU (7903): RunID: 216d923bf9cb5ab30a4f57faa3e095f6
+2026-11-11 15:37:59,064 - twister - DEBUG - QEMU (7903): PROJECT EXECUTION SUCCESSFUL
+2026-11-11 15:38:00,066 - twister - DEBUG - QEMU (7903) complete with passed (None) after 1.215646743774414 seconds
+2026-11-11 15:38:00,111 - twister - DEBUG - No timeout, return code from QEMU (None): 0
+2026-11-11 15:38:00,112 - twister - DEBUG - return code from QEMU (None): 0
+2026-11-11 15:38:00,112 - twister - DEBUG - run status: qemu_x86_64/atom/zephyr/gnu/drivers.disk.virtio_blk passed
+2026-11-11 15:38:00,119 - twister - INFO - 1 test scenarios (1 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-11-11 15:38:00,125 - twister - INFO - [32m1 of 1[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 18.82 seconds.
+2026-11-11 15:38:00,125 - twister - INFO - 2 of 2 executed test cases passed (100.00%) on 1 out of total 1823 platforms (0.05%).
+2026-11-11 15:38:00,125 - twister - INFO - 1 selected test cases not executed: 1 skipped.
+2026-11-11 15:38:00,125 - twister - INFO - [32m1[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-11-11 15:38:00,125 - twister - INFO - Saving reports...
+2026-11-11 15:38:00,125 - twister - INFO - Writing JSON report /workspace/mfcp86/logs/validation-02/before/functional/twister.json
+2026-11-11 15:38:00,125 - twister - INFO - Writing xunit report /workspace/mfcp86/logs/validation-02/before/functional/twister.xml...
+2026-11-11 15:38:00,126 - twister - INFO - Writing xunit report /workspace/mfcp86/logs/validation-02/before/functional/twister_report.xml...
+2026-11-11 15:38:00,126 - twister - INFO - Run completed

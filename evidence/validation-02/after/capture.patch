@@ -1,0 +1,121 @@
+diff --git a/drivers/virtio/virtio_pci.c b/drivers/virtio/virtio_pci.c
+--- a/drivers/virtio/virtio_pci.c
++++ b/drivers/virtio/virtio_pci.c
+@@ -15,6 +15,8 @@
+ #include <zephyr/drivers/virtio/virtqueue.h>
+ #include "virtio_common.h"
+ #include "assert.h"
++#include <zephyr/sys/printk.h>
++#include <x86_mmu.h>
+ 
+ #define DT_DRV_COMPAT virtio_pci
+ 
+@@ -109,14 +111,26 @@
+  * caches will stay coherent
+  */
+ 
++
++static void mfcp86_event(const struct device *dev, const char *kind)
++{
++	const struct virtio_pci_config *conf = dev->config;
++
++	printk("MFCP86 EVENT bdf=0x%x kind=%s\n", (unsigned int)conf->pcie->bdf, kind);
++}
++
+ void virtio_pci_isr(const struct device *dev)
+ {
+ 	struct virtio_pci_data *data = dev->data;
+ 	k_spinlock_key_t key = k_spin_lock(&data->isr_lock);
+ 
+-	virtio_isr(dev, *data->isr_status, data->virtqueue_count);
+-
++	uint8_t status = *data->isr_status;
++
++	virtio_isr(dev, status, data->virtqueue_count);
+ 	k_spin_unlock(&data->isr_lock, key);
++	if ((status & BIT(0)) != 0U) {
++		mfcp86_event(dev, "irq");
++	}
+ }
+ 
+ static bool virtio_pci_read_cap(
+@@ -214,6 +228,7 @@
+ 	*notify_addr = sys_cpu_to_le16(queue_idx);
+ 
+ 	k_spin_unlock(&data->notify_lock, key);
++	mfcp86_event(dev, "notify");
+ }
+ 
+ /*
+@@ -320,6 +335,28 @@
+ 	return ret;
+ }
+ 
++
++#if defined(CONFIG_MMU)
++static void mfcp86_map_cap(pcie_bdf_t bdf, uint8_t cfg_type, uint8_t **virt_ptr,
++                           uintptr_t phys, size_t length, uint32_t flags)
++{
++	int level;
++	pentry_t entry;
++
++	k_mem_map_phys_bare(virt_ptr, phys, length, flags);
++	z_x86_pentry_get(&level, &entry, z_x86_kernel_ptables, *virt_ptr);
++	printk("MFCP86 MAP bdf=0x%x cap=%u phys=0x%llx len=%zu flags=0x%x "
++	       "p=%u rw=%u pcd=%u pwt=%u\n",
++	       (unsigned int)bdf, (unsigned int)cfg_type, (unsigned long long)phys,
++	       length, (unsigned int)flags,
++	       (unsigned int)!!(entry & MMU_P), (unsigned int)!!(entry & MMU_RW),
++	       (unsigned int)!!(entry & MMU_PCD), (unsigned int)!!(entry & MMU_PWT));
++}
++
++#define k_mem_map_phys_bare(out, phys, length, flags) \
++	mfcp86_map_cap(bdf, cap->cfg_type, out, phys, length, flags)
++#endif
++
+ static bool virtio_pci_map_cap(pcie_bdf_t bdf, struct virtio_pci_cap *cap, void **virt_ptr)
+ {
+ 	struct pcie_bar mbar;
+@@ -339,6 +376,10 @@
+ 
+ 	return true;
+ }
++
++#if defined(CONFIG_MMU)
++#undef k_mem_map_phys_bare
++#endif
+ 
+ static uint32_t virtio_pci_read_device_feature_word(const struct device *dev, uint32_t word_n)
+ {
+@@ -561,6 +602,7 @@
+ void virtio_pci_finalize_init(const struct device *dev)
+ {
+ 	virtio_pci_write_status_bit(dev, DEVICE_STATUS_DRIVER_OK);
++	mfcp86_event(dev, "init");
+ }
+ 
+ int virtio_pci_commit_feature_bits(const struct device *dev)
+diff --git a/drivers/virtio/CMakeLists.txt b/drivers/virtio/CMakeLists.txt
+--- a/drivers/virtio/CMakeLists.txt
++++ b/drivers/virtio/CMakeLists.txt
+@@ -2,6 +2,9 @@
+ # SPDX-License-Identifier: Apache-2.0
+ 
+ zephyr_library()
++if(CONFIG_X86_64 AND CONFIG_EXCEPTION_DEBUG)
++  zephyr_library_include_directories(${ZEPHYR_BASE}/arch/x86/include)
++endif()
+ 
+ zephyr_library_sources_ifdef(CONFIG_VIRTIO virtqueue.c virtio_common.c)
+ zephyr_library_sources_ifdef(CONFIG_VIRTIO_PCI virtio_pci.c)
+diff --git a/tests/drivers/disk/disk_access/tests.yaml b/tests/drivers/disk/disk_access/tests.yaml
+--- a/tests/drivers/disk/disk_access/tests.yaml
++++ b/tests/drivers/disk/disk_access/tests.yaml
+@@ -97,6 +97,7 @@
+   drivers.disk.virtio_blk:
+     extra_args: FILE_SUFFIX=virtio_blk
+     extra_configs:
++      - CONFIG_EXCEPTION_DEBUG=y
+       - CONFIG_DISK_DRIVER_RAM=n
+       - CONFIG_DISK_DRIVER_VIRTIO_BLK=y
+     platform_allow:

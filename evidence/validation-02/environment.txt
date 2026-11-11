@@ -1,0 +1,16 @@
+Zephyr baseline b7a1d910fcb876500e584761ed8bb1c25c8cd5e7
+Linux 6.18.33.2-microsoft-standard-WSL2 x86_64
+Python 3.12.3
+West version: v1.5.0
+cmake version 3.31.10
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+1.11.1
+x86_64-zephyr-elf-gcc (Zephyr SDK 1.0.1) 14.3.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+QEMU emulator version 10.0.2 (v10.0.2-20-g5828172dcf-dirty)
+Copyright (c) 2003-2025 Fabrice Bellard and the QEMU Project developers
+SDK version 1.0.1

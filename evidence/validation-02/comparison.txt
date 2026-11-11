@@ -1,0 +1,6 @@
+0x1000 common: phys=0xfe000000 length=4096 flags=0x8 -> 0xa PCD=0 -> 1
+0x1000 notify: phys=0xfe003000 length=4096 flags=0x8 -> 0xa PCD=0 -> 1
+0x1000 ISR: phys=0xfe001000 length=4096 flags=0x8 -> 0xa PCD=0 -> 1
+0x1000 device-specific: phys=0xfe002000 length=4096 flags=0x8 -> 0xa PCD=0 -> 1
+0x1000: before events=init,irq,notify; after events=init,irq,notify
+PASS: real driver mapping capture before and after
